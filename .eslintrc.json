@@ -1,3 +1,41 @@
 {
-  "extends": "next/core-web-vitals"
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react-hooks/recommended",
+        "plugin:react/recommended",
+        "plugin:import/errors",
+        "plugin:import/warnings",
+        "plugin:import/typescript",
+        "google",
+        "plugin:prettier/recommended",
+        "prettier"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "prettier"
+    ],
+    "rules": {
+        "react/react-in-jsx-scope": "off",
+        "no-console": "warn",
+        "prefer-const": "error",
+        "quotes": ["error", "double", { "allowTemplateLiterals": true }],
+        "jsx-quotes": ["error", "prefer-double"],
+        "semi": ["error", "always"],
+        "max-len": [2, {"code": 300, "tabWidth": 4, "ignoreUrls": true}],
+        "indent": ["error", 2],
+        "import/order": ["error", {
+            "groups": ["builtin", "external", "internal", "parent", "sibling", "index", "object", "type"],"newlines-between": "always-and-inside-groups"
+        }]
+    }
+
 }

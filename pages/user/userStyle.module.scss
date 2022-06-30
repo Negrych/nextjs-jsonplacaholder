@@ -1,0 +1,29 @@
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  div {
+    background: cornflowerblue;
+    border-radius: 20px;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 20px;
+  }
+  a {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    display: block;
+    background: #c27a1b;
+    padding: 20px 50px;
+    text-decoration: none;
+    color: blue;
+    cursor: pointer;
+    border:none;
+    border-radius: 20px;
+  }
+}

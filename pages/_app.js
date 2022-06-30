@@ -1,7 +1,16 @@
-import '../styles/globals.css'
+import { Provider } from "react-redux";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+import store from "../store/storeConfig";
 
-export default MyApp
+// eslint-disable-next-line react/prop-types
+const _App = ({ Component, pageProps }) => {
+  return (
+    <div>
+      <Provider store={store}>
+        <Component {...pageProps} />
+      </Provider>
+    </div>
+  );
+};
+
+export default _App;

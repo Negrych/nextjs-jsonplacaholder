@@ -1,0 +1,26 @@
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:50px 50px 0 0;
+    background: #c27a1b;
+    padding: 20px 50px;
+    border-radius: 20px;
+    border:none;
+    a {
+      display: block;
+      padding: 10px 20px;
+      border-radius: 20px;
+      border:none;
+      cursor: pointer;
+      background: silver;
+      color: blue;
+      text-decoration: none;
+    }
+  }
+}

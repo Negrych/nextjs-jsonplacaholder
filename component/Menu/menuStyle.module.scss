@@ -1,0 +1,18 @@
+.wrap {
+  margin-top: 0;
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type:none;
+  background: aquamarine;
+  a {
+    background: cornflowerblue;
+    cursor: pointer;
+    padding: 20px 30px;
+    border-radius: 20px;
+    border:none;
+    text-decoration: none;
+    color: #c27a1b;
+  }
+}
